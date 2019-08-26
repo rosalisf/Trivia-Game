@@ -2,7 +2,7 @@
 let questions = [
   {
     question: "Who won in the Best New Artist category in the 2008 EMA?",
-    answers: ["Miley Cytus", "Katy Perry", "Tokio Hotel", "Metro Station"],
+    answers: ["Miley Cyrus", "Katy Perry", "Tokio Hotel", "Metro Station"],
     correctId: 2,
     pictureSource: "Images/tokio_hotel.gif"
   },
