@@ -119,7 +119,7 @@ function showCorrectAnswer(choiceId) {
     nextQuestion();
   }, 3000);
 }
-//
+// When the skip button is clicked, the right answer is shown but the wrong answer counter is incremented.
 function buttonClick(element) {
   const id = element.id;
 
@@ -130,6 +130,7 @@ function buttonClick(element) {
     showCorrectAnswer(-1);
   }
 }
+// Calls the endQuiz function
 function endQuiz() {
   $(".results").show();
   $("#correct").text("Correct answers: " + correctAnswer);
@@ -137,6 +138,7 @@ function endQuiz() {
   $("#skipped").text("Skipped questions: " + skippedQuestion);
 }
 
+// Allows the game to start when the Start button is pressed
 function startQuiz() {
   correctAnswer = 0;
   incorrectAnswer = 0;

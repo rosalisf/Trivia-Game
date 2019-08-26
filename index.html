@@ -25,6 +25,35 @@
       margin-left: 47%;
       position: relative;
     }
+    #first {
+      width: 200px;
+      height: 100px;
+      margin-top: 20px;
+      margin-left: 610px;
+    }
+    #answer0 {
+      margin-top: 10px;
+    }
+    #answer1 {
+      margin-top: 10px;
+    }
+    #answer2 {
+      margin-top: 10px;
+    }
+    #answer3 {
+      margin-top: 10px;
+    }
+    #skip {
+      margin-top: 40px;
+    }
+
+    #last {
+      width: 200px;
+      height: 100px;
+      margin-top: 20px;
+      margin-left: 610px;
+    }
+
     h1 {
       text-align: center;
     }
@@ -38,38 +67,46 @@
       <h1 class="display-4">Trivia Game!</h1>
     </div>
     <div class="start">
-      <button onclick="startQuiz()">
-        Start
+      <button class="btn btn-primary btn-lg" id="first" onclick="startQuiz()">
+        <h3>Start</h3>
       </button>
     </div>
 
-    <div class="container" style="display:none;">
+    <div class="container" style="display: none;">
       <h2 id="timer">Time left</h2>
       <h2 id="question">Question Niggaaaaa</h2>
-      <button onclick="buttonClick(this)" id="answer0">
+      <button class="btn btn-success" onclick="buttonClick(this)" id="answer0">
         Answer 1
       </button>
-      <button onclick="buttonClick(this)" id="answer1">
+      <button class="btn btn-danger" onclick="buttonClick(this)" id="answer1">
         Answer 2
       </button>
-      <button onclick="buttonClick(this)" id="answer2">
+      <button class="btn btn-warning" onclick="buttonClick(this)" id="answer2">
         Answer 3
       </button>
-      <button onclick="buttonClick(this)" id="answer3">
+      <button class="btn btn-info" onclick="buttonClick(this)" id="answer3">
         Answer 4
       </button>
-      <button onclick="buttonClick(this)" id="skip">
+      <button class="btn btn-secondary" onclick="buttonClick(this)" id="skip">
         Skip
       </button>
     </div>
 
-    <div class="show-answer" style="display:none;">
-      <h1 id="realanswer">The correct answer is:</h1>
+    <div class="show-answer" style="display: none;">
+      <h1
+        id="realanswer"
+        style="font-family: Futura, Univers, Helvetica, sans-serif;"
+      >
+        The correct answer is:
+      </h1>
       <img id="successpicture" />
     </div>
 
     <div class="results" style="display: none;">
-      <h3 id="correct">
+      <h3
+        id="correct"
+        style="font-family: Futura, Univers, Helvetica, sans-serif;"
+      >
         Correct answers:
       </h3>
       <h3 id="wrong">
@@ -78,8 +115,8 @@
       <h3 id="skipped">
         Unanswered:
       </h3>
-      <button onclick="startQuiz()">
-        Restart Quiz!
+      <button class="btn btn-primary btn-lg" id="last" onclick="startQuiz()">
+        <h3>Restart Quiz!</h3>
       </button>
     </div>
     <script src="game.js"></script>
