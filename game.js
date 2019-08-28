@@ -59,6 +59,7 @@ let correctAnswer = 0;
 let incorrectAnswer = 0;
 let skippedQuestion = 0;
 let questionId = -1;
+let failPicSource = "Images/dr_phil_l.png";
 
 // Starts the game with the 1st question and the next after player chooses answer or timer runs out
 function nextQuestion() {
@@ -105,6 +106,9 @@ function showCorrectAnswer(choiceId) {
     pic.show();
   } else {
     text += ", you suck! Take the L.";
+    let failPic = $("#failpicture");
+    failPic.attr("src", failPicSource);
+    failPic.show();
     if (choiceId == -1) {
       skippedQuestion++;
     } else {
