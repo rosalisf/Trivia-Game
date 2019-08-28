@@ -14,6 +14,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <style>
+    .container {
+      background: linear-gradient(163deg, #31ffca, #ff3131, #faff31, #b531ff);
+      background-size: 800% 800%;
+
+      -webkit-animation: AnimationName 30s ease infinite;
+      -moz-animation: AnimationName 30s ease infinite;
+      animation: AnimationName 30s ease infinite;
+
+      @-webkit-keyframes AnimationName {
+        0% {
+          background-position: 23% 0%;
+        }
+        50% {
+          background-position: 78% 100%;
+        }
+        100% {
+          background-position: 23% 0%;
+        }
+      }
+      @-moz-keyframes AnimationName {
+        0% {
+          background-position: 23% 0%;
+        }
+        50% {
+          background-position: 78% 100%;
+        }
+        100% {
+          background-position: 23% 0%;
+        }
+      }
+      @keyframes AnimationName {
+        0% {
+          background-position: 23% 0%;
+        }
+        50% {
+          background-position: 78% 100%;
+        }
+        100% {
+          background-position: 23% 0%;
+        }
+      }
+    }
+
     .jumbotron {
       text-align: center;
     }
@@ -33,23 +76,23 @@
     }
     #answer0 {
       margin-top: 10px;
-      margin-left: 45px;
+      margin-left: 20px;
     }
     #answer1 {
       margin-top: 10px;
-      margin-left: 45px;
+      margin-left: 20px;
     }
     #answer2 {
       margin-top: 10px;
-      margin-left: 45px;
+      margin-left: 20px;
     }
     #answer3 {
       margin-top: 10px;
-      margin-left: 45px;
+      margin-left: 20px;
     }
     #skip {
       margin-top: 40px;
-      margin-left: 45px;
+      margin-left: 20px;
     }
 
     #last {
@@ -79,7 +122,7 @@
 
     <div class="container" style="display: none;">
       <h2 id="timer">Time left</h2>
-      <h2 id="question">Question Niggaaaaa</h2>
+      <h2 id="question"></h2>
       <button class="btn btn-success" onclick="buttonClick(this)" id="answer0">
         Answer 1
       </button>
